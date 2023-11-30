@@ -9,9 +9,10 @@ function Signup() {
     }, []);
 
     return (
-        <div id="otpless-login-page">
-            <script type="text/javascript" src="https://otpless.com/auth.js" cid="H9NM3R2P9KCY37GNEJM9QYF51K64G39Y"></script>
-        </div>
+        <div className=""></div>
+        // <div id="otpless-login-page">      
+        // {/* <script type="text/javascript" src="https://otpless.com/auth.js"></script> */}
+        //   </div>
         )
 }
 
