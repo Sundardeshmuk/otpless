@@ -4,13 +4,13 @@ function Signup() {
     useEffect(() => {
         window.otpless = (otplessUser) => {
             alert(JSON.stringify(otplessUser));
-            console.log(JSON.stringify(otplessUser),"hiiiiii...");
+            console.log(JSON.stringify(otplessUser));
         };
     }, []);
 
     return (
         <div id="otpless-login-page">
-            <script type="text/javascript" src="https://famous-paletas-99eced.netlify.app" cid="H9NM3R2P9KCY37GNEJM9QYF51K64G39Y"></script>
+            <script type="text/javascript" src="https://otpless.com/auth.js" cid="H9NM3R2P9KCY37GNEJM9QYF51K64G39Y"></script>
         </div>
         )
 }
