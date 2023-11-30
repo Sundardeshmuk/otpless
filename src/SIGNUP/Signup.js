@@ -4,7 +4,7 @@ function Signup() {
     useEffect(() => {
         window.otpless = (otplessUser) => {
             alert(JSON.stringify(otplessUser));
-            console.log(JSON.stringify(otplessUser));
+            console.log(JSON.stringify(otplessUser),"gffguggg.........");
         };
     }, []);
 
