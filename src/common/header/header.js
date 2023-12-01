@@ -36,10 +36,9 @@ setdark();
 
     return(
         <div className="heder">  
-            <h1>Crtpto-tracker<span style={{color:"blue" }}>.</span></h1>
+            <h1>Crypto-tracker<span style={{color:"blue" }}>.</span></h1>
             <div className="links">
                 <Switch checked={darkmode} onClick={()=>changemode()}/>
-                <a href="/Home"><p className="link">Home</p></a>             
             
                 <a href="https://criptof4.netlify.app"><Button text={"Login"} /></a>
             </div>
