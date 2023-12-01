@@ -1,41 +1,50 @@
-import React, { useState } from 'react'
+import React, { useState,createContext } from 'react'
 import { useEffect } from 'react';
-import { Navigate } from 'react-router-dom';
 import { Helmet } from "react-helmet"
+import Login from './Login';
+import { useNavigate } from 'react-router-dom';
+const UserContext = createContext();
 
 function Signup() {
     const script = document.createElement("script");
-
+let nav=useNavigate();
     const [bulian,setbulian]=useState(false);
-    const [data,setdata]=useState(false);
+    const [data,setdata]=useState({});
+    let  x="";
     useEffect(() => {
         window.otpless = (otplessUser) => {
-            window.open('/login');
-            // alert(JSON.stringify(otplessUser));
-        setbulian(true);
+            alert(JSON.stringify(otplessUser));
+             x=  JSON.stringify(otplessUser);
+
+              setdata(x);
+             
+              setbulian(true);
+              nav("/login",{state:{data:x}});
+
         //     console.log(JSON.stringify(otplessUser),"gffguggg.........");
     };
+    // if(bulian){
+    //     // window.open('/login');
+    //     // nav("/login",{state:{data:data}});
+    //     console.log(data,"datadatadatadat");
+    //     console.log(x,"sdfsdefv");
+    // }
 }, []);   
   
     return (
-        <div id="otpless-login-page">
+       <div id="otpless-login-page">
           <Helmet>
             <script   src="https://otpless.com/auth.js"  ></script>
           </Helmet>
+         {/* {bulian &&(             
+             <UserContext.Provider value={x}>
+             <Login/>
+           </UserContext.Provider>
+                 )
+        } */}
+
         </div>)
 }
 
 export default Signup
-
-// import React, { Component } from 'react'
-// import DocumentTi
-// export default class Signup extends Component {
-//   render() {
-//     return (
-//       <div>
-        
-//       </div>
-//     )
-//   }
-// }
-
+export {UserContext}
