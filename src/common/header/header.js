@@ -41,7 +41,7 @@ setdark();
                 <Switch checked={darkmode} onClick={()=>changemode()}/>
                 <a href="/Home"><p className="link">Home</p></a>             
             
-                <a href="https://criptof4.netlify.app/"><Button text={"Login"} /></a>
+                <a href="https://criptof4.netlify.app"><Button text={"Login"} /></a>
             </div>
             
         </div>
