@@ -18,6 +18,7 @@ console.log(data);
      <h1>   Hi....</h1>
      <h1>   Your Mobile no is :{data.mobile.number}</h1> 
      <h1>   Email :{data.email.email}</h1>
+     <h1> Click on the Login button</h1>
      {/* <h1>{data}</h1> */}
     </>
   )
