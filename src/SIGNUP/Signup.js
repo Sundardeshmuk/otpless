@@ -8,27 +8,19 @@ const UserContext = createContext();
 function Signup() {
     const script = document.createElement("script");
 let nav=useNavigate();
-    const [bulian,setbulian]=useState(false);
-    const [data,setdata]=useState({});
+    // const [bulian,setbulian]=useState(false);
+    // const [data,setdata]=useState({});
     let  x="";
     useEffect(() => {
         window.otpless = (otplessUser) => {
             alert(JSON.stringify(otplessUser));
              x=  JSON.stringify(otplessUser);
-
-              setdata(x);
-             
-              setbulian(true);
+            //   setdata(x);         
+            //   setbulian(true);
               nav("/login",{state:{data:x}});
-
         //     console.log(JSON.stringify(otplessUser),"gffguggg.........");
     };
-    // if(bulian){
-    //     // window.open('/login');
-    //     // nav("/login",{state:{data:data}});
-    //     console.log(data,"datadatadatadat");
-    //     console.log(x,"sdfsdefv");
-    // }
+    
 }, []);   
   
     return (

@@ -39,13 +39,9 @@ setdark();
             <h1>Crtpto-tracker<span style={{color:"blue" }}>.</span></h1>
             <div className="links">
                 <Switch checked={darkmode} onClick={()=>changemode()}/>
-                <a href="/Home"><p className="link">Home</p></a>
-          
-                <a href="/Info"><p className="link">compare</p></a>
-           
-                <a href="/Login"><p className="link">Login</p></a>
+                <a href="/Home"><p className="link">Home</p></a>             
             
-                <a href="/Dashboard"><Button text={"dashboard"} onclick={()=>alert("hiii")}/></a>
+                <a href="https://criptof4.netlify.app/"><Button text={"Login"} /></a>
             </div>
             
         </div>
